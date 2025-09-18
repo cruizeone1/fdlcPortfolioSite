@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Franklin De La Cruz — Portfolio</title>
+  <meta name="description" content="Presales & AI Specialist. Portfolio, experience, awards, projects, certifications, and contact." />
+  <meta name="author" content="Franklin De La Cruz" />
+  <meta property="og:title" content="Franklin De La Cruz — Portfolio" />
+  <meta property="og:description" content="Presales & AI Specialist." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { 50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a' } }
+        }
+      }
+    };
+  </script>
+  <style>
+    @media print { .no-print { display:none!important; } .card{box-shadow:none!important;border:1px solid #e5e7eb} a{text-decoration:none;color:inherit} }
+  </style>
+  <script>
+    const setTheme = (mode) => { if(mode==='dark'){document.documentElement.classList.add('dark');localStorage.theme='dark';} else if(mode==='light'){document.documentElement.classList.remove('dark');localStorage.theme='light';} else {localStorage.removeItem('theme');} };
+    (function(){ const t=localStorage.theme; if(t==='dark'||(!('theme' in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');} })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Franklin De La Cruz",
+    "jobTitle": "Presales & AI Specialist",
+    "email": "mailto:franklin.delacruz2@gmail.com",
+    "telephone": "+1-407-881-3797",
+    "address": {"@type":"PostalAddress","addressLocality":"Dallas","addressRegion":"TX","addressCountry":"US"},
+    "url": "https://www.linkedin.com/in/franklin-delacruz",
+    "sameAs": ["https://www.linkedin.com/in/franklin-delacruz","https://dlcconsultancy.com/"]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/70 dark:bg-slate-900/70 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap gap-3 md:gap-6 items-center justify-between">
+      <a href="#home" class="font-semibold text-lg">Franklin De La Cruz</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#awards" class="hover:text-brand-700">Awards</a>
+        <a href="#about" class="hover:text-brand-700">About</a>
+        <a href="#experience" class="hover:text-brand-700">Experience</a>
+        <a href="#skills" class="hover:text-brand-700">Skills</a>
+        <a href="#projects" class="hover:text-brand-700">Projects</a>
+        <a href="#certifications" class="hover:text-brand-700">Certifications</a>
+        <a href="#training" class="hover:text-brand-700">Training</a>
+        <a href="#education" class="hover:text-brand-700">Education</a>
+        <a href="#contact" class="hover:text-brand-700">Contact</a>
+      </nav>
+      <!-- Contact quick-links in header -->
+      <div class="flex items-center gap-3 text-xs md:text-sm">
+        <a href="tel:+14078813797" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700"><span class="sr-only">Phone</span><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.36 2.3.55 3.6.55a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.19 2.5.55 3.6a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>(407) 881‑3797</a>
+        <a href="mailto:franklin.delacruz2@gmail.com" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a2 2 0 0 1 2 2v.4l-10 5.6L2 8.4V8a2 2 0 0 1 2-2zm0 4.7 8 4.5 8-4.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7.3z"/></svg>franklin.delacruz2@gmail.com</a>
+        <span class="hidden md:inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 1 7 7v1a7 7 0 1 1-14 0V9a7 7 0 0 1 7-7zm0 20a9 9 0 0 0 9-9h-2a7 7 0 1 1-14 0H3a9 9 0 0 0 9 9z"/></svg>Dallas, TX</span>
+        <a href="https://www.linkedin.com/in/franklin-delacruz" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700">LinkedIn</a>
+        <a href="https://dlcconsultancy.com/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700">dlcconsultancy.com</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero with media slot -->
+  <section id="home" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Presales & AI Specialist
+          <span class="block text-brand-600">Building measurable CX with LLMs</span>
+        </h1>
+        <p class="mt-6 text-lg text-slate-600 dark:text-slate-300">Strategic presales partner specializing in AI-driven solutions, enterprise demos, and technical validation to deliver outcomes: containment, AHT reduction, CSAT lift, and revenue impact.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center rounded-xl bg-brand-600 text-white px-5 py-3 font-medium shadow hover:shadow-md hover:bg-brand-700">Get in touch</a>
+          <a href="#experience" class="inline-flex items-center rounded-xl border px-5 py-3 font-medium border-slate-300 dark:border-slate-700">View experience</a>
+        </div>
+      </div>
+      <!-- Media well: drop in an <img> OR a <video> below -->
+      <div class="relative">
+        <div class="aspect-video rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
+          <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-center p-4">
+            <!-- Replace with your media: -->
+            <!-- <img src="headshot.jpg" alt="Franklin De La Cruz" class="w-full h-full object-cover rounded-xl"/> -->
+            <!-- or: -->
+            <!-- <video controls poster="poster.jpg" class="w-full h-full rounded-xl"><source src="intro.mp4" type="video/mp4"/></video> -->
+            <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base">Drop an image or demo video here (replace this box with an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code> tag).</p>
+          </div>
+        </div>
+        <div class="absolute -bottom-6 -right-6 rotate-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm"><p class="text-xs">Available for strategic presales + AI architecture engagements.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards (unchanged structure) -->
+  <section id="awards" class="py-16 md:py-24 bg-gradient-to-b from-brand-50/60 to-transparent dark:from-slate-900/30 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center gap-3">
+        <svg class="w-8 h-8 text-brand-700" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a3 3 0 0 1 3 3v1h3a2 2 0 0 1 2 2v2a5 5 0 0 1-4 4.9V18a2 2 0 0 1-2 2h-2v2h-2v-2H8a2 2 0 0 1-2-2v-3.1A5 5 0 0 1 2 10V8a2 2 0 0 1 2-2h3V5a3 3 0 0 1 3-3h2Zm3 6V6h3v2a3 3 0 0 1-3 3V8Zm-6 0V6H6v2a3 3 0 0 0 3 3V8Z"/></svg>
+        <h2 class="text-2xl md:text-3xl font-bold">Awards & Career Highlights</h2>
+      </div>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Impact metrics are in <span class="font-semibold">bold</span> for quick scanning.</p>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="card p-6 rounded-2xl border bg-white/90 dark:bg-slate-950/50"><div class="flex items-start gap-3"><svg class="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.5 8H3l5 4-2 6 6-4 6 4-2-6 5-4h-6.5L12 2z"/></svg><div><h3 class="font-semibold">Senior Solutions Consultant, Pitch Deck Contest Winner — LivePerson</h3><p class="text-sm text-slate-700 dark:text-slate-300 mt-1">1st place among <span class="font-semibold">150+ Sales & Presales</span> peers for storytelling, solution alignment, and executive presence.</p></div></div></div>
+        <div class="card p-6 rounded-2xl border bg-white/90 dark:bg-slate-950/50"><div class="flex items-start gap-3"><svg class="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.5 8H3l5 4-2 6 6-4 6 4-2-6 5-4h-6.5L12 2z"/></svg><div><h3 class="font-semibold">Solutions Consultant of the Quarter — Sprinklr</h3><p class="text-sm text-slate-700 dark:text-slate-300 mt-1">Helped influence <span class="font-semibold">$1.6M of $6M</span> quarterly revenue and supported a resource‑constrained team.</p></div></div></div>
+        <div class="card p-6 rounded-2xl border bg-white/90 dark:bg-slate-950/50"><div class="flex items-start gap-3"><svg class="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.5 8H3l5 4-2 6 6-4 6 4-2-6 5-4h-6.5L12 2z"/></svg><div><h3 class="font-semibold">Team Contributor Award — SugarCRM</h3><p class="text-sm text-slate-700 dark:text-slate-300 mt-1">Developed a new‑logo sales process adopted as the <span class="font-semibold">gold standard</span> — improving pipeline clarity and sales‑cycle consistency.</p></div></div></div>
+        <div class="card p-6 rounded-2xl border bg-white/90 dark:bg-slate-950/50"><div class="flex items-start gap-3"><svg class="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.5 8H3l5 4-2 6 6-4 6 4-2-6 5-4h-6.5L12 2z"/></svg><div><h3 class="font-semibold">Ruby Recognition Award — Pentaho / Hitachi Vantara</h3><p class="text-sm text-slate-700 dark:text-slate-300 mt-1">Recognized for technical leadership, sales collaboration, and process improvement initiatives.</p></div></div></div>
+        <div class="card p-6 rounded-2xl border bg-white/90 dark:bg-slate-950/50"><div class="flex items-start gap-3"><svg class="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.5 8H3l5 4-2 6 6-4 6 4-2-6 5-4h-6.5L12 2z"/></svg><div><h3 class="font-semibold">Top Earner Recognition — Pentaho / Hitachi Vantara</h3><p class="text-sm text-slate-700 dark:text-slate-300 mt-1">Participated as SC in deals totaling <span class="font-semibold">>$1.2M</span> revenue — technical validation, solution design, exec‑level presentations.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center gap-3"><svg class="w-7 h-7 text-brand-700" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-5.33 0-8 2.67-8 6v2h16v-2c0-3.33-2.67-6-8-6z"/></svg><h2 class="text-2xl md:text-3xl font-bold">About</h2></div>
+      <p class="mt-4 text-slate-700 dark:text-slate-300">Solution-driven presales professional partnering with global enterprises to design, validate, and scale AI-powered customer experiences. Skilled in Conversational AI, Salesforce administration, and value-based demonstrations.</p>
+    </div>
+  </section>
+
+  <!-- Experience (fleshed out from profile) -->
+  <section id="experience" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Experience</h2>
+      <div class="mt-8 space-y-4">
+        <!-- LivePerson Lead SC -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50">
+          <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="LivePerson">LP</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Lead Solutions Consultant — LivePerson</h3><span class="text-sm text-slate-500">Remote</span></div></div>
+          <ul class="mt-3 list-disc ps-5 text-sm text-slate-700 dark:text-slate-300 space-y-1">
+            <li>Architected Conversational AI with LLM-driven orchestration; integrated GenAI for intent, summarization, retrieval.</li>
+            <li>Designed hybrid NLU + GenAI models for dispute resolution, servicing, and lead gen; aligned with routing & containment.</li>
+            <li>Led enterprise PoCs: orchestration flows, CRM/ERP integrations, AI governance, model selection, prompt engineering.</li>
+            <li>Implemented multi-channel bots (WhatsApp, SMS, AMB, web chat, voice-to-digital) with secure human-handoff.</li>
+            <li>Drove analytics for predictive insights; improved containment, repeat contact rate, and AHT.</li>
+          </ul>
+        </div>
+        <!-- LivePerson Senior SC -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50">
+          <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="LivePerson">LP</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Senior Solutions Consultant — LivePerson</h3><span class="text-sm text-slate-500">Remote</span></div></div>
+          <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Strategic technical bridge for enterprise clients; designed and presented tailored Conversational AI solutions to drive deal velocity and customer success.</p>
+        </div>
+        <!-- DLC Consultancy -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50">
+          <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="DLC Consultancy">DL</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Lead Solutions Consultant — DLC Consultancy</h3><span class="text-sm text-slate-500">Orlando, FL</span></div></div>
+          <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Freelance Salesforce technical consulting for SMBs.</p>
+        </div>
+        <!-- Sprinklr roles -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50">
+          <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="Sprinklr">SP</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">AI Research Senior Solutions Specialist — Sprinklr</h3><span class="text-sm text-slate-500">USA</span></div></div>
+          <ul class="mt-3 list-disc ps-5 text-sm text-slate-700 dark:text-slate-300 space-y-1">
+            <li>Advised F100 brands on sentiment, topic clustering, entity recognition; unified care/marketing/research dashboards.</li>
+            <li>Built predictive/NLP modules surfacing trends and anomalies; guided GenAI adoption for external & internal use cases.</li>
+            <li>Aligned AI accuracy/confidence to CSAT, containment, conversion; influenced <span class="font-semibold">$3M+</span> FY22 revenue.</li>
+          </ul>
+        </div>
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50">
+          <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="Sprinklr">SP</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Senior Enterprise Solutions Consultant — Sprinklr</h3><span class="text-sm text-slate-500">USA</span></div></div>
+        </div>
+        <!-- SugarCRM -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50">
+          <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="SugarCRM">SG</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Senior Solutions Consultant — SugarCRM</h3><span class="text-sm text-slate-500">USA</span></div></div>
+          <ul class="mt-3 list-disc ps-5 text-sm text-slate-700 dark:text-slate-300 space-y-1">
+            <li>Assisted in closing <span class="font-semibold">>$400k</span> (FY22) and influenced <span class="font-semibold">$500k</span> (FY21) enterprise revenue; solo SC for 150+ accounts for 6 months.</li>
+            <li>Coordinated creation of an enterprise sales process adopted as the company standard.</li>
+          </ul>
+        </div>
+        <!-- Hitachi Vantara / Pentaho -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50">
+          <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="Hitachi Vantara">HV</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Pre‑Sales Technical Solutions Engineer — Pentaho / Hitachi Vantara</h3><span class="text-sm text-slate-500">USA</span></div></div>
+          <ul class="mt-3 list-disc ps-5 text-sm text-slate-700 dark:text-slate-300 space-y-1">
+            <li>Influenced <span class="font-semibold">>$1.2M</span> new-logo revenue; built custom demos with real/mock data.</li>
+            <li>Integrated diverse data sources (SQL, Hadoop, Kafka, Hive, Impala, NoSQL) to prove platform value.</li>
+          </ul>
+        </div>
+        <!-- Genio Innovations -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="Genio Innovations">GI</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Chief Executive Officer — Genio Innovations</h3><span class="text-sm text-slate-500">South & Central FL</span></div></div><p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Operated an MSP providing IT support across multiple industries.</p></div>
+        <!-- YMCA -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="YMCA">YM</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Director of Information Technology — YMCA of South Palm Beach County</h3><span class="text-sm text-slate-500">Boca Raton, FL</span></div></div></div>
+        <!-- Nonprofits First -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="Nonprofits First">NF</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">IT Director — Nonprofits First</h3><span class="text-sm text-slate-500">Boynton Beach, FL</span></div></div><ul class="mt-3 list-disc ps-5 text-sm text-slate-700 dark:text-slate-300 space-y-1"><li>Ran a 25‑person contact center for nonprofit IT support; managed budgeting, hiring, renewals, and product/service development.</li><li>Built Salesforce-based helpdesk and automated invoicing; migrated 70% of clients to Office 365.</li></ul></div>
+        <!-- Himmel Group -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="Himmel Group">HG</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Manager of Information Technology — Himmel Group</h3><span class="text-sm text-slate-500">USA</span></div></div></div>
+        <!-- NYC DOE -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="NYC Department of Education">NY</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">Technology Manager / Program Chair / Service Technician — NYC Department of Education</h3><span class="text-sm text-slate-500">NYC</span></div></div><p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Administered IT for a 1,000+ student school; led classroom tech integration and server deployments; taught multiple courses.</p></div>
+        <!-- New York Presbyterian -->
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold" title="New York Presbyterian Hospital">NP</div><div class="flex-1 flex items-baseline justify-between gap-2"><h3 class="font-semibold">PC Rollout Technician — New York Presbyterian Hospital</h3><span class="text-sm text-slate-500">NYC</span></div></div></div>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">Replace two‑letter badges with company logos by swapping the <code>div</code> for <code>&lt;img class='w-8 h-8 rounded-lg object-contain' src='logo.svg' alt='Logo' /&gt;</code>.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/40 border-y">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Skills</h2>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Salesforce</h3><p class="text-sm mt-2">Implementation, Flow Automation, Objects & Fields, Security, Reports & Dashboards, Integrations.</p></div>
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">AI & Analytics</h3><p class="text-sm mt-2">GenAI, LLMs, Prompt Engineering, Conversational Design, Predictive Analytics, NLU + GenAI orchestration.</p></div>
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Data Platforms</h3><p class="text-sm mt-2">ETL, SQL, Hadoop, Pentaho, BI & Visualization, Integration.</p></div>
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">IT Infrastructure</h3><p class="text-sm mt-2">Virtualization, Exchange, Scripting, Server Admin, VOIP, Networking, Storage.</p></div>
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">SaaS Platforms</h3><p class="text-sm mt-2">Sprinklr (Certified), SugarCRM (Admin), Pentaho (DI/BI), Salesforce (Admin).</p></div>
+        <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Sales & Demo</h3><p class="text-sm mt-2">MEDDPICC, Challenger, Demo2Win, BANT, Beyond the Demo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (kept and expanded previously) -->
+  <section id="projects" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Projects</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">AI Bot Design</h3><p class="text-sm">Developed AI-powered conversational bots blending NLU and GenAI to handle intent recognition, summarization, and routing.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Salesforce Administration</h3><p class="text-sm">Built custom Salesforce apps with objects, field mapping, flow creation, automation, and integrated dashboards.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">POC with Conversational Design</h3><p class="text-sm">Led enterprise PoCs; authored intents/prompts; instrumented analytics to track containment, AHT, and CSAT.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">WhatsApp Handoff for AT&T</h3><p class="text-sm">Designed Spanish‑first handoff with secure agent routing and analytics instrumentation.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">AI Research Dashboards — Sprinklr</h3><p class="text-sm">Unified care/marketing/research signals; surfaced anomalies and brand health trends with NLP pipelines.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">MDT/WDS Server Setup & Deployment</h3><p class="text-sm">Deployed WDS/MDT (2012R2), task sequences, PXE boot, and DFS replication across 4 offices; streamlined imaging for ~500 users.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">IT Support Contract Renewals</h3><p class="text-sm">Negotiated renewals for 30+ clients; expanded scope by <span class="font-semibold">40%</span>; secured county‑wide agreement worth <span class="font-semibold">>$1M</span>.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Office 365 Server Migrations (30 Orgs)</h3><p class="text-sm">Executed 30+ on‑prem Exchange → O365 migrations for nonprofits; templated plans; typical cutover in ~3 days.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Salesforce Invoice Automation</h3><p class="text-sm">Created automated invoicing in Salesforce integrating contracts & ticketing; boosted billing efficiency by <span class="font-semibold">50%</span>.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Salesforce Volunteer Management</h3><p class="text-sm">Collected requirements and built a volunteer management system in Salesforce; delivered to production.</p></article>
+        <article class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">OSX Server Setup</h3><p class="text-sm">Deployed OSX Server for NYC Department of Education; configured core services for staff & students.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications with icons -->
+  <section id="certifications" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/40 border-y">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center gap-3"><svg class="w-7 h-7 text-brand-700" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 8 6l-6 1 4 4-1 6 6-3 6 3-1-6 4-4-6-1-4-4z"/></svg><h2 class="text-2xl md:text-3xl font-bold">Licenses & Certifications</h2></div>
+      <ul class="mt-6 grid md:grid-cols-2 gap-4 text-sm">
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a5 5 0 0 1 5 5v1h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2l-4 3-4-3H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V7a5 5 0 0 1 5-5z"/></svg><div><strong>Salesforce Certified AI Associate</strong> — Salesforce · Credential ID 4521941</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4V4zm0 4h16v10H4V8zm3 2v6h10v-6H7z"/></svg><div><strong>The Complete SQL Bootcamp</strong> — Udemy · Credential ID UC-f14b9fbd-875c-4dbb-acdb-38873ec8b3ac</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a5 5 0 0 1 5 5v1h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2l-4 3-4-3H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V7a5 5 0 0 1 5-5z"/></svg><div><strong>Salesforce Certified Administrator (SCA)</strong> — Salesforce · Credential ID 4231498</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4V4zm0 4h16v10H4V8zm3 2v6h10v-6H7z"/></svg><div><strong>Salesforce Certified Administrator Training</strong> — Udemy</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v4H3V5zm0 6h18v8H3v-8zm4 2v4h10v-4H7z"/></svg><div><strong>Discover all the features of ZOOM</strong> — Coursera · Credential ID Y8WXZF7SAWDS</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3z"/></svg><div><strong>Getting Started with Zoom</strong> — Zoom · Credential ID ZLC-LP54359</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3z"/></svg><div><strong>Getting Started with Zoom Contact Center</strong> — Zoom · Credential ID ZLC-LP54374</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3z"/></svg><div><strong>Introduction to Zoom Contact Center for Agents</strong> — Zoom · Credential ID ZLC-LP54367</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4V4zm0 4h16v10H4V8zm3 2v6h10v-6H7z"/></svg><div><strong>Sales Foundations</strong> — LinkedIn</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 8 6l-6 1 4 4-1 6 6-3 6 3-1-6 4-4-6-1-4-4z"/></svg><div><strong>Certified Sugar Administration Specialist</strong> — SugarCRM</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v4H3V5zm0 6h18v8H3v-8zm4 2v4h10v-4H7z"/></svg><div><strong>Introduction to Big Data</strong> — Coursera · Credential ID VUXXT6HELRGW</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 8 6l-6 1 4 4-1 6 6-3 6 3-1-6 4-4-6-1-4-4z"/></svg><div><strong>Pentaho & Hadoop Framework Fundamentals (DI2000)</strong> — Pentaho</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 8 6l-6 1 4 4-1 6 6-3 6 3-1-6 4-4-6-1-4-4z"/></svg><div><strong>Business Analytics Data Modeling (BA3000)</strong> — Pentaho</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 8 6l-6 1 4 4-1 6 6-3 6 3-1-6 4-4-6-1-4-4z"/></svg><div><strong>Business Analytics Report Designer (BA2000)</strong> — Pentaho</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 8 6l-6 1 4 4-1 6 6-3 6 3-1-6 4-4-6-1-4-4z"/></svg><div><strong>Business Analytics User Console (BA1000)</strong> — Pentaho</div></li>
+        <li class="flex items-start gap-3 p-4 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 8 6l-6 1 4 4-1 6 6-3 6 3-1-6 4-4-6-1-4-4z"/></svg><div><strong>Pentaho Data Integration Fundamentals (DI1000)</strong> — Pentaho</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technical Training -->
+  <section id="training" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center gap-3"><svg class="w-7 h-7 text-brand-700" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6h16v2H4V6zm0 3h16v9H4V9zm3 2v5h10v-5H7z"/></svg><h2 class="text-2xl md:text-3xl font-bold">Technical Training & Courses</h2></div>
+      <ul class="mt-6 grid md:grid-cols-2 gap-4 text-sm">
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v4H3V5l9-3 9 3v14H3V5z"/></svg> API Postman — <span class="italic">In Progress</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l6 3v4c0 4-3 7-6 9-3-2-6-5-6-9V5l6-3z"/></svg> Microsoft Python Development — <span class="italic">In Progress</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2 7h20v2H2V7zm0 4h20v2H2v-2zm0 4h20v2H2v-2z"/></svg> Gemini for Google Workspace — <span class="font-medium">Completed</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4V4zm0 4h16v2H4V8zm0 4h16v2H4v-2z"/></svg> Google AI Essentials — <span class="italic">In Progress</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M10 2h4v4h-4V2zM4 8h4v4H4V8zm12 0h4v4h-4V8zM10 14h4v4h-4v-4z"/></svg> 100 Days of Python Coding — <span class="italic">In Progress</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h8v8H3v-8zm10-10h8v8h-8V3zM3 3h8v8H3V3zm10 10h8v8h-8v-8z"/></svg> Big Data — <span class="font-medium">Completed</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 1 7 7v2h-2V9a5 5 0 1 0-10 0v2H5V9a7 7 0 0 1 7-7zM4 13h16v7H4v-7z"/></svg> AI Infrastructure & Operational Fundamentals — <span class="italic">In Progress</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2 6l10 6 10-6v12H2V6z"/></svg> AI for CX with Chatbots & Analytics — <span class="italic">In Progress</span></li>
+        <li class="flex items-center gap-3 p-3 rounded-xl border bg-white/80 dark:bg-slate-950/50"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-4V4h-2v2h-4V4H8v2H4v2h16V6zM4 10v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8H4z"/></svg> Microsoft AI & ML Engineering — <span class="text-slate-500">Not Started</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/40 border-y">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Education</h2>
+      <ul class="mt-6 space-y-4 text-slate-700 dark:text-slate-300">
+        <li class="card p-5 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><strong>M.B.A.</strong> — Florida Institute of Technology (Information Technology Management)</li>
+        <li class="card p-5 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><strong>B.B.A., CIS</strong> — Baruch College (CUNY) — Zicklin School of Business</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section id="interests" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center gap-3"><svg class="w-7 h-7 text-brand-700" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35 10.55 20C5.4 16.36 2 13.28 2 9.5 2 7 4 5 6.5 5 8.04 5 9.54 5.81 10.35 7.09 11.16 5.81 12.66 5 14.2 5 16.7 5 18.7 7 18.7 9.5c0 3.78-3.4 6.86-8.55 10.5L12 21.35z"/></svg><h2 class="text-2xl md:text-3xl font-bold">Interests</h2></div>
+      <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-slate-700 dark:text-slate-300 text-sm">
+        <li class="flex items-center gap-2 p-3 rounded-xl border bg-white/70 dark:bg-slate-950/40"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.5 7.5H22l-6 4.5 2.5 7.5-6-4.5-6 4.5L9.9 15 4 10.5h7.5z"/></svg> AI advocacy & practice</li>
+        <li class="flex items-center gap-2 p-3 rounded-xl border bg-white/70 dark:bg-slate-950/40"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M5 4h14v2H5V4zm0 4h14v10H5V8zm2 2v6h10v-6H7z"/></svg> Books & learning</li>
+        <li class="flex items-center gap-2 p-3 rounded-xl border bg-white/70 dark:bg-slate-950/40"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3z"/></svg> Tech gadgets</li>
+        <li class="flex items-center gap-2 p-3 rounded-xl border bg-white/70 dark:bg-slate-950/40"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-7.07 17.07l-1.41 1.41 1.41-.01H5A10 10 0 1 0 12 2z"/></svg> Everest Base Camp</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 bg-gradient-to-b from-brand-50 to-transparent dark:from-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="card p-8 rounded-3xl border bg-white/90 dark:bg-slate-950/60">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold">Let’s build better conversations.</h2>
+            <p class="mt-3 text-slate-700 dark:text-slate-300">Open to roles and projects where AI meets measurable CX outcomes. Hands‑on demos, architecture, and executive clarity to move deals forward.</p>
+            <ul class="mt-4 text-sm text-slate-700 dark:text-slate-300 space-y-1">
+              <li><strong>Email:</strong> <a href="mailto:franklin.delacruz2@gmail.com" class="text-brand-700">franklin.delacruz2@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+14078813797" class="text-brand-700">(407) 881‑3797</a></li>
+              <li><strong>Location:</strong> Dallas, TX</li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/franklin-delacruz" target="_blank" rel="noreferrer" class="text-brand-700">linkedin.com/in/franklin-delacruz</a></li>
+              <li><strong>Website:</strong> <a href="https://dlcconsultancy.com/" target="_blank" rel="noreferrer" class="text-brand-700">dlcconsultancy.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <form class="grid grid-cols-1 gap-3" onsubmit="event.preventDefault(); alert('Static form. Connect to Formspree/Netlify or your backend.');">
+              <input type="text" required placeholder="Your name" class="rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/50 px-4 py-3" />
+              <input type="email" required placeholder="Email" class="rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/50 px-4 py-3" />
+              <textarea rows="4" required placeholder="Message" class="rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/50 px-4 py-3"></textarea>
+              <div class="flex gap-3">
+                <a href="mailto:franklin.delacruz2@gmail.com" class="inline-flex items-center rounded-xl bg-brand-600 text-white px-5 py-3 font-medium shadow hover:shadow-md hover:bg-brand-700">Email me</a>
+                <a href="tel:+14078813797" class="inline-flex items-center rounded-xl border px-5 py-3 font-medium border-slate-300 dark:border-slate-700">Call</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="mt-6 text-sm text-slate-600 dark:text-slate-400">Prefer LinkedIn? <a class="text-brand-700 dark:text-brand-300" href="https://www.linkedin.com/in/franklin-delacruz" target="_blank" rel="noreferrer">Connect here</a>.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200 dark:border-slate-800 text-sm">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>&copy; <span id="year"></span> Franklin De La Cruz. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#home">Top</a>
+        <a href="mailto:franklin.delacruz2@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/franklin-delacruz" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://dlcconsultancy.com/" target="_blank" rel="noreferrer">Website</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
