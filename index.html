@@ -64,9 +64,9 @@
       <div class="mt-2 flex items-center justify-between gap-3">
         <nav class="flex gap-4 md:gap-6 text-sm overflow-x-auto scrollbar-none">
           <a href="#about" class="hover:text-brand-700 whitespace-nowrap">About</a>
+          <a href="#skills" class="hover:text-brand-700 whitespace-nowrap">Skills</a>
           <a href="#awards" class="hover:text-brand-700 whitespace-nowrap">Awards</a>
           <a href="#experience" class="hover:text-brand-700 whitespace-nowrap">Experience</a>
-          <a href="#skills" class="hover:text-brand-700 whitespace-nowrap">Skills</a>
           <a href="#projects" class="hover:text-brand-700 whitespace-nowrap">Projects</a>
           <a href="#certifications" class="hover:text-brand-700 whitespace-nowrap">Certifications</a>
           <a href="#training" class="hover:text-brand-700 whitespace-nowrap">Training</a>
@@ -82,8 +82,10 @@
 
       <!-- Hero (STACKED so headshot is above resume on all screens) -->
       <section class="space-y-10">
-<!-- Headshot: larger, wraps text on desktop -->
-<div class="relative mx-auto size-[clamp(240px,32vw,420px)]
+<!-- Bigger on mobile, tighter on desktop -->
+<div class="relative mx-auto
+            size-[clamp(300px,75vw,460px)]
+            lg:size-[clamp(240px,32vw,420px)]
             lg:float-right lg:ml-6 lg:mb-2 lg:[shape-outside:inset(0_round_1rem)]">
   <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
     <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 overflow-hidden">
@@ -94,8 +96,6 @@
       />
     </div>
   </div>
-
-  <!-- badge -->
   <div class="absolute -bottom-6 right-4 rotate-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 shadow-sm">
     <p class="text-xs">Available for strategic presales engagements + post-sales implementations.</p>
   </div>
@@ -441,6 +441,7 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 
