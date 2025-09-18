@@ -82,21 +82,19 @@
 
       <!-- Hero (STACKED so headshot is above resume on all screens) -->
       <section class="space-y-10">
-        <!-- Media well (Headshot FIRST) -->
-  <figure
-    class="relative mx-auto w-full max-w-[360px] sm:max-w-[420px]
-           lg:float-right lg:ml-6 lg:mb-2 lg:w-56 xl:w-64 2xl:w-72"
-    >
-    <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
-      <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 flex items-center justify-center p-3 overflow-hidden
-                  lg:[shape-outside:inset(0_round_1rem)]">
-        <img
-          src="/assets/images/fdlcheadshot.jpg"
-          alt="Franklin De La Cruz"
-          class="w-full h-full object-contain rounded-xl"
-        />
-      </div>
+<!-- Consistent, proportional scaling across mobile → desktop -->
+<div class="relative mx-auto size-[clamp(220px,28vw,360px)]">
+  <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
+    <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 overflow-hidden">
+      <img
+        src="/assets/images/fdlcheadshot.jpg"
+        alt="Franklin De La Cruz"
+        class="w-full h-full object-contain rounded-xl"
+      />
     </div>
+  </div>
+</div>
+
 
   <!-- badge stays the same -->
   <div class="absolute -bottom-6 right-4 rotate-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 shadow-sm">
@@ -442,6 +440,7 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 
