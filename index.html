@@ -73,7 +73,7 @@
           <a href="#training" class="hover:text-brand-700 whitespace-nowrap">Training</a>
           <a href="#education" class="hover:text-brand-700 whitespace-nowrap">Education</a>
         </nav>
-        <!-- Removed header Resume button per request -->
+        <!-- No header Resume button -->
       </div>
     </div>
   </header>
@@ -81,8 +81,21 @@
   <main id="home" class="py-12 md:py-16">
     <div class="max-w-6xl xl:max-w-7xl mx-auto px-4 space-y-16">
 
-      <!-- Hero -->
-      <section class="grid lg:grid-cols-2 gap-10 items-center">
+      <!-- Hero (STACKED so headshot is above resume on all screens) -->
+      <section class="space-y-10">
+        <!-- Media well (Headshot FIRST) -->
+        <div class="relative">
+          <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
+            <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 overflow-hidden">
+              <img src="/assets/images/fdlcheadshot.jpg" alt="Franklin De La Cruz" class="max-w-[800px] w-full h-full object-contain rounded-xl" />
+            </div>
+          </div>
+          <div class="absolute -bottom-6 right-4 rotate-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 shadow-sm">
+            <p class="text-xs">Available for strategic presales engagements + post-sales implementations.</p>
+          </div>
+        </div>
+
+        <!-- Text + Actions -->
         <div class="space-y-6">
           <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
             Strategic Solutions Consultant
@@ -93,7 +106,7 @@
             enterprise demos, and technical validation to deliver measurable business outcomes.
           </p>
 
-          <!-- Hero actions (Get in touch removed; Resume moved here) -->
+          <!-- Actions -->
           <div class="pt-2 flex flex-wrap gap-3">
             <a href="/assets/documents/Lead Solutions Consultant.pdf" download
                class="no-print inline-flex items-center rounded-xl bg-brand-600 text-white px-5 py-3 font-medium shadow hover:shadow-md hover:bg-brand-700"
@@ -108,30 +121,49 @@
             </a>
           </div>
 
-          <!-- Quick contacts -->
-          <div class="pt-2 flex flex-wrap gap-2 text-sm">
-            <a href="tel:+14078813797" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700">(407) 881-3797</a>
-            <a href="mailto:franklin.delacruz2@gmail.com" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700">franklin.delacruz2@gmail.com</a>
-            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700">Dallas, TX</span>
-            <a href="https://www.linkedin.com/in/franklin-delacruz" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700">LinkedIn</a>
-            <a href="https://dlcconsultancy.com/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-slate-300 dark:border-slate-700">dlcconsultancy.com</a>
-          </div>
-        </div>
-
-        <!-- Media well -->
-        <div class="relative">
-          <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
-            <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 overflow-hidden">
-              <img src="/assets/images/fdlcheadshot.jpg" alt="Franklin De La Cruz" class="max-w-[800px] w-full h-full object-contain rounded-xl" />
+          <!-- Let's Connect callout -->
+          <div class="mt-6 p-5 rounded-2xl border bg-white/80 dark:bg-slate-950/60">
+            <h3 class="text-lg font-semibold mb-3">Let’s Connect</h3>
+            <div class="flex flex-wrap gap-2 text-sm">
+              <a href="tel:+14078813797"
+                 class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 shadow"
+                 aria-label="Call Franklin">
+                <!-- phone icon -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011.02-.24 11.3 11.3 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1C10.3 21 3 13.7 3 4a1 1 0 011-1h3.49a1 1 0 011 1 11.3 11.3 0 00.57 3.56 1 1 0 01-.24 1.02L6.6 10.8z"/></svg>
+                (407) 881-3797
+              </a>
+              <a href="mailto:franklin.delacruz2@gmail.com"
+                 class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 shadow"
+                 aria-label="Email Franklin">
+                <!-- mail icon -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v.4l-10 6.25L2 6.4V6zm0 3.2V18a2 2 0 002 2h16a2 2 0 002-2V9.2l-9.34 5.83a2 2 0 01-2.12 0L2 9.2z"/></svg>
+                franklin.delacruz2@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/franklin-delacruz" target="_blank" rel="noreferrer"
+                 class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 shadow"
+                 aria-label="Open LinkedIn profile">
+                <!-- linkedin icon -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.82v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.66 4.8 6.12V23h-4v-6.64c0-1.58-.03-3.62-2.21-3.62-2.21 0-2.55 1.73-2.55 3.52V23h-4V8z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://dlcconsultancy.com/" target="_blank" rel="noreferrer"
+                 class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 shadow"
+                 aria-label="Open DLC Consultancy website">
+                <!-- globe icon -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.93 9H16.9a14.7 14.7 0 00-1.07-4.02A8.04 8.04 0 0119.93 11zM12 4c1.2 0 2.93 2.35 3.56 6H8.44C9.07 6.35 10.8 4 12 4zM4.07 11A8.04 8.04 0 018.17 6.98 14.7 14.7 0 007.1 11H4.07zM4.07 13H7.1a14.7 14.7 0 001.07 4.02A8.04 8.04 0 014.07 13zM12 20c-1.2 0-2.93-2.35-3.56-6h7.12C14.93 17.65 13.2 20 12 20zm3.83-4.98A14.7 14.7 0 0016.9 13h3.03a8.04 8.04 0 01-4.1 4.02z"/></svg>
+                dlcconsultancy.com
+              </a>
+              <span class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                <!-- map pin -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+                Dallas, TX
+              </span>
             </div>
-          </div>
-          <div class="absolute -bottom-6 right-4 rotate-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 shadow-sm">
-            <p class="text-xs">Available for strategic presales engagements + post-sales implementations.</p>
           </div>
         </div>
       </section>
 
-      <!-- About (moved ABOVE Awards) -->
+      <!-- About -->
       <section id="about">
         <h2 class="text-2xl md:text-3xl font-bold">About</h2>
         <p class="mt-4 text-slate-700 dark:text-slate-300 max-w-3xl">
@@ -152,7 +184,7 @@
           <div class="card p-6 rounded-2xl border bg-white/80 dark:bg-slate-950/50"><h3 class="font-semibold">Sales & Demo</h3><p class="text-sm mt-2">MEDDPICC, Challenger, Demo2Win, BANT, Beyond the Demo.</p></div>
         </div>
       </section>
-      
+
       <!-- Awards -->
       <section id="awards" class="border-y border-slate-200 dark:border-slate-800 py-12 bg-gradient-to-b from-brand-50/60 to-transparent dark:from-slate-900/30">
         <h2 class="text-2xl md:text-3xl font-bold">Awards & Career Highlights</h2>
@@ -166,7 +198,7 @@
         </div>
       </section>
 
-      <!-- Experience (keeps your dated/consolidated version) -->
+      <!-- Experience -->
       <section id="experience">
         <h2 class="text-2xl md:text-3xl font-bold">Experience</h2>
         <div class="mt-6 space-y-6">
@@ -387,7 +419,7 @@
         </ul>
       </section>
 
-
+    </div>
   </main>
 
   <!-- Footer -->
@@ -406,4 +438,3 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
