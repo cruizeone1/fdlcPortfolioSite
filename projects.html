@@ -15,7 +15,7 @@
     .prose ol{list-style: decimal; padding-left:1.25rem}
   </style>
   <script>
-    // Initialize theme from saved preference or system setting
+    // Initialize theme from saved preference or system setting (prevents flash)
     (function(){
       try{
         const saved = localStorage.getItem('theme');
@@ -32,9 +32,10 @@
   <header class="sticky top-0 z-50 backdrop-blur bg-white/80 dark:bg-gray-800/80 border-b border-gray-200 dark:border-gray-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <a href="#top" class="font-extrabold tracking-tight text-xl">Franklin De La Cruz</a>
+        <a href="/index.html" class="font-extrabold tracking-tight text-xl">Franklin De La Cruz</a>
         <div class="flex items-center gap-4">
           <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="/index.html" class="hover:text-blue-600 dark:hover:text-blue-400">Home</a>
             <a href="#overview" class="hover:text-blue-600 dark:hover:text-blue-400">Overview</a>
             <a href="#crm" class="hover:text-blue-600 dark:hover:text-blue-400">CRM Development</a>
             <a href="#infra" class="hover:text-blue-600 dark:hover:text-blue-400">Network & Infra</a>
@@ -80,7 +81,7 @@
     </div>
   </section>
 
-  <!-- OVERVIEW / TOC -->
+  <!-- OVERVIEW -->
   <section id="overview" class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-8">
@@ -114,7 +115,7 @@
     </div>
   </section>
 
-  <!-- CRM DEVELOPMENT (with Salesforce Admin as subsection) -->
+  <!-- CRM DEVELOPMENT (with Salesforce Admin subsection) -->
   <section id="crm" class="py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-3">
@@ -123,7 +124,6 @@
       </div>
       <p class="mt-2 text-gray-600 dark:text-gray-300">Salesforce engineering and process automation to streamline operations, billing, and volunteer engagement.</p>
 
-      <!-- Classic Salesforce Projects -->
       <div class="mt-8 grid md:grid-cols-2 gap-6">
         <article class="bg-gradient-to-br from-blue-50 to-white dark:from-blue-900/30 dark:to-gray-900 border border-blue-100 dark:border-blue-900 rounded-2xl p-6">
           <h3 class="text-xl font-bold">Salesforce Invoice Automation</h3>
@@ -145,7 +145,7 @@
         </article>
       </div>
 
-      <!-- Salesforce Admin Experience (moved here as subsection) -->
+      <!-- Salesforce Admin Experience -->
       <div id="sf-admin" class="mt-12">
         <div class="flex items-center gap-3">
           <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-white font-bold">SF</span>
@@ -341,7 +341,7 @@
     </div>
   </section>
 
-  <!-- INFRASTRUCTURE -->
+  <!-- NETWORK & INFRASTRUCTURE -->
   <section id="infra" class="py-16 bg-gray-50 dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-3">
@@ -584,11 +584,11 @@
         <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
           <summary class="font-semibold cursor-pointer">Z Bank Conversational Bot</summary>
           <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
-            <p><strong>Objective:</strong> Account opening, credit apps, and lead capture.</p>
+            <p><strong>Objective:</strong> Account opening, credit applications, and lead capture while meeting KYC requirements.</p>
             <ul>
               <li>Intent library (KYC, account types, eligibility).</li>
-              <li>Core-banking API integration; PII guardrails.</li>
-              <li>Escalation to agent + analytics for containment.</li>
+              <li>Core-banking API integration; PII guardrails and audit trails.</li>
+              <li>Escalation to agent + analytics for containment & deflection.</li>
             </ul>
           </div>
         </details>
@@ -599,7 +599,7 @@
             <p>Automated licensing Q&A; member support; reduced manual volume ~30%.</p>
             <ul>
               <li>FAQ ingestion; intent tuning for licensing verbs.</li>
-              <li>Membership flows; handoff when confidence low.</li>
+              <li>Membership flows; human handoff when confidence is low.</li>
             </ul>
           </div>
         </details>
@@ -608,9 +608,9 @@
           <summary class="font-semibold cursor-pointer">Fraud & Banking Resolution Bot</summary>
           <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
             <ul>
-              <li>Structured capture of disputed transactions.</li>
-              <li>Case creation & routing to fraud ops.</li>
-              <li>Step-by-step progress updates.</li>
+              <li>Structured capture of disputed transactions with verification steps.</li>
+              <li>Case creation & routing to fraud ops with SLA timers.</li>
+              <li>Step-by-step progress updates and status subscription.</li>
             </ul>
           </div>
         </details>
@@ -619,8 +619,8 @@
           <summary class="font-semibold cursor-pointer">Pest Control Bot</summary>
           <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
             <ul>
-              <li>Pest type, urgency, location flows.</li>
-              <li>Calendar booking integration; dispatch alerts.</li>
+              <li>Pest type, urgency, and location flows.</li>
+              <li>Calendar booking integration; technician dispatch alerts.</li>
             </ul>
           </div>
         </details>
@@ -639,9 +639,169 @@
           <summary class="font-semibold cursor-pointer">Smart Banking Assistant</summary>
           <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
             <ul>
-              <li>Balances, transfers, statements; disambiguation.</li>
-              <li>Secure APIs; audit logs.</li>
+              <li>Balances, transfers, statements; disambiguation and verification.</li>
+              <li>Secure APIs; audit logs; rate-limiting and abuse prevention.</li>
             </ul>
           </div>
         </details>
-        <!-- 
+        <!-- Utilities Energy Assistance -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Utilities Energy Assistance Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Eligibility intake; validation vs program rules and income thresholds.</li>
+              <li>Case generation + CRM sync; empathetic tone & accessibility.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Hard Drive Recommendation -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Hard Drive Recommendation Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Sequential questioning (capacity, speed, budget, interface).</li>
+              <li>Decision-tree mapping to catalog SKUs; upsell/cross-sell logic.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Thermos Retail -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Thermos Retail Assistant</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Parts/specs/warranty inquiries; document retrieval from CMS.</li>
+              <li>Routed claims when documentation uploaded; status tracking.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Retail Stylist -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Retail Stylist Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Preference intake; real-time styling metadata and recommendations.</li>
+              <li>Outfit assembly with accessory upsells; cart handoff.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI PROJECTS -->
+  <section id="ai" class="py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600 text-white font-bold">AI</span>
+        <h2 class="text-3xl font-extrabold">AI Projects</h2>
+      </div>
+      <p class="mt-2 text-gray-700 dark:text-gray-300">Generative AI applications in enablement and storytelling, blending text, voice, video, and avatars to create compelling narratives and training materials.</p>
+      <div class="mt-6 grid lg:grid-cols-2 gap-6">
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Descript AI Content Generation (2025)</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Leveraged Descript’s text-to-voice and avatar features to produce enablement content for LivePerson. Transcript-based editing workflow streamlined production for both technical and non-technical audiences (~60% faster).</p>
+          <ul class="mt-3 text-sm text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li>Generative voice cloning and video avatars</li>
+            <li>Transcript-based editing for rapid iteration</li>
+            <li>LMS distribution with analytics</li>
+          </ul>
+        </article>
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">LTX Studio Pitch Deck Video (2025)</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Created a generative video from still images for LivePerson’s Pitch Deck Contest. Won first place by demonstrating cutting-edge AI storytelling capabilities.</p>
+          <ul class="mt-3 text-sm text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li>Image-to-video generation workflows</li>
+            <li>Custom script and storyboarding</li>
+            <li>Award-winning output used in executive presentations</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEB & CONTENT -->
+  <section id="web" class="py-16 bg-gray-50 dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600 text-white font-bold">WEB</span>
+        <h2 class="text-3xl font-extrabold">Web Design & Online Content</h2>
+      </div>
+      <p class="mt-2 text-gray-700 dark:text-gray-300">Projects in web presence, consultancy branding, and learning systems for organizations.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <img class="rounded-xl mb-4" alt="Portfolio site" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"/>
+          <h3 class="text-xl font-bold">Portfolio Website (2025) · franklindelacruz.com</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">HTML from scratch, styled with Tailwind; hosted on GitHub & published via Cloudflare. Built to highlight career projects; completed in two days (Sept 2025).</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-gray-700 dark:text-gray-300">
+            <li>DNS + SSL; content model for projects</li>
+            <li>Fast, accessible, responsive</li>
+          </ul>
+        </article>
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <img class="rounded-xl mb-4" alt="Consultancy site" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop"/>
+          <h3 class="text-xl font-bold">DLC Consultancy (2024) · dlcconsultancy.com</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">WIX site with SEO, services pages, and lead capture.</p>
+        </article>
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <img class="rounded-xl mb-4" alt="Drupal LMS" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop"/>
+          <h3 class="text-xl font-bold">YMCA S. Florida Enablement Portal (2015)</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Drupal LMS on AWS: modules, media, roles/permissions, and maintenance.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section id="media" class="py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-rose-600 text-white font-bold">🎥</span>
+        <h2 class="text-3xl font-extrabold">AI-Generated Content & Media</h2>
+      </div>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <article class="bg-gradient-to-br from-rose-50 to-white dark:from-rose-900/20 dark:to-gray-900 border border-rose-100 dark:border-rose-900 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Descript AI Enablement (2025)</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Text-to-voice with Overdub + digital avatars; transcript-based editing. ~60% faster than traditional workflows.</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-gray-700 dark:text-gray-300">
+            <li>Script → voice → avatar → branded export</li>
+            <li>LMS distribution with analytics</li>
+          </ul>
+        </article>
+        <article class="bg-gradient-to-br from-purple-50 to-white dark:from-purple-900/20 dark:to-gray-900 border border-purple-100 dark:border-purple-900 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">LTX Studio Pitch Video (2025)</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Generative motion from stills; first place in LivePerson Pitch Deck Contest.</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-gray-700 dark:text-gray-300">
+            <li>Storyboard → asset prep → motion design</li>
+            <li>VO sync, pacing, and final polish</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <p class="text-sm text-gray-600 dark:text-gray-400">© 2025 Franklin De La Cruz · Built with TailwindCSS</p>
+        <div class="text-sm text-gray-500 dark:text-gray-400">Repo links: <span class="italic">(add GitHub URLs in each section)</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Theme Toggle -->
+  <script>
+    (function(){
+      const btn = document.getElementById('themeToggle');
+      const setLabel = () => btn && (btn.textContent = document.documentElement.classList.contains('dark') ? 'Light mode' : 'Dark mode');
+      setLabel();
+      btn && btn.addEventListener('click', () => {
+        const root = document.documentElement;
+        const isDark = root.classList.toggle('dark');
+        try{ localStorage.setItem('theme', isDark ? 'dark' : 'light'); }catch(e){}
+        setLabel();
+      });
+    })();
+  </script>
+</body>
+</html>
