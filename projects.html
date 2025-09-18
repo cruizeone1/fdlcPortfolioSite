@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Franklin De La Cruz · Unified Project Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html{scroll-behavior:smooth}
+    body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    .prose ul{list-style: disc; padding-left:1.25rem}
+    .prose ol{list-style: decimal; padding-left:1.25rem}
+  </style>
+  <script>
+    // Initialize theme from saved preference or system setting
+    (function(){
+      try{
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if(saved === 'dark' || (!saved && prefersDark)){
+          document.documentElement.classList.add('dark');
+        }
+      }catch(e){}
+    })();
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 dark:bg-gray-800/80 border-b border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#top" class="font-extrabold tracking-tight text-xl">Franklin De La Cruz</a>
+        <div class="flex items-center gap-4">
+          <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="#overview" class="hover:text-blue-600 dark:hover:text-blue-400">Overview</a>
+            <a href="#crm" class="hover:text-blue-600 dark:hover:text-blue-400">CRM Development</a>
+            <a href="#infra" class="hover:text-blue-600 dark:hover:text-blue-400">Network & Infra</a>
+            <a href="#pentaho" class="hover:text-blue-600 dark:hover:text-blue-400">Pentaho</a>
+            <a href="#convai" class="hover:text-blue-600 dark:hover:text-blue-400">Conversational AI</a>
+            <a href="#ai" class="hover:text-blue-600 dark:hover:text-blue-400">AI</a>
+            <a href="#web" class="hover:text-blue-600 dark:hover:text-blue-400">Web & Content</a>
+          </nav>
+          <button id="themeToggle" class="rounded-lg px-3 py-1.5 text-sm border border-gray-300 hover:border-gray-400 text-gray-700 dark:text-gray-200 dark:border-gray-600 dark:hover:border-gray-500" aria-label="Toggle color theme">Dark mode</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-blue-50 via-violet-50 to-rose-50 dark:from-[#0b1220] dark:via-[#0f172a] dark:to-black"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">Unified Project Portfolio</h1>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">A forward-looking repository of infrastructure builds, data & analytics, CRM engineering, conversational AI systems, and web content — curated from real deployments and consulting work.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm dark:bg-blue-900 dark:text-blue-300">Solutions Consulting</span>
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm dark:bg-emerald-900 dark:text-emerald-300">Data Engineering</span>
+            <span class="px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-sm dark:bg-violet-900 dark:text-violet-300">Conversational AI</span>
+            <span class="px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-sm dark:bg-rose-900 dark:text-rose-300">CRM Admin</span>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full rounded-2xl shadow-2xl" alt="Portfolio visual" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop"/>
+          <div class="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 shadow-lg rounded-xl p-4 border border-gray-200 dark:border-gray-700">
+            <div class="text-sm font-semibold">Impact Snapshot</div>
+            <ul class="mt-2 text-sm text-gray-600 dark:text-gray-300 list-disc pl-4">
+              <li>500+ users standardized imaging</li>
+              <li>30+ O365 org migrations</li>
+              <li>17 Pentaho analytics demos</li>
+              <li>10 production-grade bots</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW / TOC -->
+  <section id="overview" class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold">Overview</h2>
+          <p class="mt-3 text-gray-600 dark:text-gray-300">This portfolio consolidates hands-on work across enterprise IT, cloud migrations, Salesforce customization, data engineering, analytics modeling, and conversational AI design. It’s equal parts pragmatic delivery and R&D: ship value quickly, then scale it elegantly.</p>
+          <div class="mt-6 grid sm:grid-cols-2 gap-4">
+            <a href="#crm" class="group border border-gray-200 dark:border-gray-700 rounded-2xl p-4 hover:border-blue-300 hover:shadow">
+              <div class="font-semibold">CRM Development</div>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Salesforce builds + Admin capabilities (detailed).</p>
+            </a>
+            <a href="#infra" class="group border border-gray-200 dark:border-gray-700 rounded-2xl p-4 hover:border-blue-300 hover:shadow">
+              <div class="font-semibold">Network & Infrastructure</div>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">MDT/WDS, O365 migrations, macOS Server.</p>
+            </a>
+            <a href="#pentaho" class="group border border-gray-200 dark:border-gray-700 rounded-2xl p-4 hover:border-blue-300 hover:shadow">
+              <div class="font-semibold">Pentaho Data Integration & Analytics</div>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">17 demos: ETL, Mondrian, dashboards.</p>
+            </a>
+            <a href="#convai" class="group border border-gray-200 dark:border-gray-700 rounded-2xl p-4 hover:border-blue-300 hover:shadow">
+              <div class="font-semibold">Conversational AI</div>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Banking, retail, HR, utilities, and more.</p>
+            </a>
+          </div>
+        </div>
+        <aside class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+          <div class="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">Callout</div>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">All CRM admin capabilities are derived from real customer issues resolved for Salesforce consultancy clients. Requests are grouped by the <span class="font-semibold">functional capability</span> needed to deliver the solution.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRM DEVELOPMENT (with Salesforce Admin as subsection) -->
+  <section id="crm" class="py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white font-bold">CRM</span>
+        <h2 class="text-3xl font-extrabold">CRM Development</h2>
+      </div>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Salesforce engineering and process automation to streamline operations, billing, and volunteer engagement.</p>
+
+      <!-- Classic Salesforce Projects -->
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <article class="bg-gradient-to-br from-blue-50 to-white dark:from-blue-900/30 dark:to-gray-900 border border-blue-100 dark:border-blue-900 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Salesforce Invoice Automation</h3>
+          <p class="mt-1 text-gray-700 dark:text-gray-300">Automated invoice creation using contracts and ticket hours; boosted billing efficiency by <span class="font-semibold">50%</span>.</p>
+          <ul class="mt-3 text-sm text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li>Custom objects for Contracts & Ticket Hours</li>
+            <li>Scheduled monthly invoice generation & emailing</li>
+            <li>Ticketing system integration & finance enablement</li>
+          </ul>
+        </article>
+        <article class="bg-gradient-to-br from-emerald-50 to-white dark:from-emerald-900/30 dark:to-gray-900 border border-emerald-100 dark:border-emerald-900 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Salesforce Volunteer Management</h3>
+          <p class="mt-1 text-gray-700 dark:text-gray-300">Volunteer lifecycle in Salesforce — requirements to deployment, improved scheduling & engagement.</p>
+          <ul class="mt-3 text-sm text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li>Volunteer, Assignment & Schedule data model</li>
+            <li>Automation for reminders & communications</li>
+            <li>Reporting dashboards for coverage & impact</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Salesforce Admin Experience (moved here as subsection) -->
+      <div id="sf-admin" class="mt-12">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-white font-bold">SF</span>
+          <h3 class="text-2xl font-extrabold">Salesforce Admin Experience</h3>
+        </div>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">These Salesforce capabilities are a combination of a variety of <span class="font-semibold">customer issues</span> resolved for consultancy clients, grouped by the <span class="font-semibold">functional areas</span> required to solve each request.</p>
+
+        <div class="mt-6 grid lg:grid-cols-2 gap-6">
+          <!-- Flow Automation -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 open:shadow">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Flow Automation</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <p><strong>Objective:</strong> Automate repetitive business processes and enforce SLAs.</p>
+              <p><strong>Outcome:</strong> Faster sales/service cycles, fewer manual errors.</p>
+              <ul>
+                <li>Auto-update <em>Account is Live</em> state via flow (checkbox → picklist).</li>
+                <li>Email Case Owner 3 days after <em>Awaiting Customer Reply</em>.</li>
+                <li>Auto-create Renewal Opportunities 90 days pre-expiration.</li>
+                <li>Slack notifications: Closed Lost, Win Wires (Original/Renewal/Add-on).</li>
+                <li>Lead Auto Assignment by State + owner notification fixes.</li>
+                <li>Auto-assign new Cases to Support queue; 30-day no-touch alerts.</li>
+                <li>Automated Implementation Tracker milestone updates.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Custom Objects -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Custom Objects</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <p><strong>Objective:</strong> Extend data model for risk, health, and implementation operations.</p>
+              <p><strong>Outcome:</strong> Structured, reportable workflows.</p>
+              <ul>
+                <li>Termination Risk Events (notes, status) on Account.</li>
+                <li>Account Health survey object with question bank.</li>
+                <li>Implementation Tracker enhancements: Health, At-Risk Reason, Live state.</li>
+                <li>Service Facility object with address compound field.</li>
+                <li>Implementation form tables for granular milestones.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Validation Rules -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Validation Rules</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <p><strong>Objective:</strong> Enforce data integrity & compliance.</p>
+              <p><strong>Outcome:</strong> Clean input, reliable reporting.</p>
+              <ul>
+                <li>Required on Closed Lost: Loss Reason, Date, Description, New EMR.</li>
+                <li>Prevent <em>Implementation Stage = Complete</em> without AM/Support Handoff Date.</li>
+                <li>New EMR required when Original Contract status is Cancelled.</li>
+                <li>Previous EMR duplication checks.</li>
+                <li>Case required fields vary by Status.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Field Dependencies -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Field Dependencies</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <p><strong>Objective:</strong> Context-aware forms that reduce cognitive load.</p>
+              <p><strong>Outcome:</strong> Faster entry, fewer mistakes.</p>
+              <ul>
+                <li>Task Department → Task Type dependent picklists.</li>
+                <li><em>Account is Live</em> changed to picklist (Live / Partially Live / In Implementation).</li>
+                <li>Implementation Category auto-derived from Employee Count (Small/Medium/Enterprise).</li>
+                <li>Account Health picklist: removed <em>In Implementation</em>, added <em>Deferred Contract</em>.</li>
+                <li>Modules Included (Account) visible on Contacts for campaign tooling.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Permissions -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">User Permissions & Security</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <ul>
+                <li>Only Sales can edit Opportunities; only Leadership can set Closed Won.</li>
+                <li>Mobile editing controls on Implementation Tracker.</li>
+                <li>Case owner default changed from Account Owner → CPS1.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Page Layouts -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Page Layout Modifications</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <ul>
+                <li>Fields surfaced: First Opp Close Date; Initial Bill Date & Class (Opp → Product); Contract Expiration (Contract → Opp & Account).</li>
+                <li>Objects on Account layout: Termination Risk Events, Account Health.</li>
+                <li>UI streamlining: Tasks to full-page, Activity Log on Implementation Tracker, Activity History moved right.</li>
+                <li>Case view cleanup & Implementation Tracker page adjustments.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Emails & Notifications -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Email Templates & Notifications</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <ul>
+                <li>Default Case “From” → Support inbox.</li>
+                <li>Accounting notified on Lab Setup Case close.</li>
+                <li>Closed Won emails show <em>Total MRR</em> (not Amount).</li>
+                <li>WinWire variants: Original, Renewal, Add-on; CPS1/2 label updates.</li>
+                <li>Resolved duplicate case assignment emails.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Reports & Dashboards -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Reports & Dashboards</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <ul>
+                <li>Parent Account rollup report (single line per parent).</li>
+                <li>Survey reporting with case-level fields (Case #, Account, Type, Owner, Component).</li>
+                <li>Dashboard filtering by Account; add-on vs churn signals.</li>
+                <li>Total Users rollup fix; contract expiration tracking.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Surveys -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Surveys & Customer Feedback</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <ul>
+                <li>Auto-send CSAT surveys on Case closure.</li>
+                <li>Filters to exclude certain Account statuses.</li>
+                <li>Updated survey fields & questions; added per-ticket CSAT.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Misc -->
+          <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <div class="font-semibold">Miscellaneous Enhancements</div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 group-open:hidden">click to expand</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 hidden group-open:inline">click to collapse</span>
+            </summary>
+            <div class="mt-4 text-sm text-gray-700 dark:text-gray-300 prose">
+              <ul>
+                <li>Case After Save error fix; duplicated Current EMR cleanup.</li>
+                <li>Customer Value Score; Account Age in Months formula.</li>
+                <li>LinkedIn URL field as hyperlink; Products for one-time setup fees.</li>
+                <li>Contract expiration automation fixes; Modules Included surfaced on Contacts.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFRASTRUCTURE -->
+  <section id="infra" class="py-16 bg-gray-50 dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-white font-bold">IT</span>
+        <h2 class="text-3xl font-extrabold">Network & Infrastructure</h2>
+      </div>
+      <div class="mt-6 grid lg:grid-cols-3 gap-6">
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <img class="rounded-xl mb-4" alt="Deployment" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop"/>
+          <h3 class="text-xl font-bold">MDT/WDS Server Setup & Deployment</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Imaging automation across 4 global offices for 500+ users; ~2h → 20m per device.</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-gray-700 dark:text-gray-300">
+            <li>MDT/WDS on Server 2012 R2</li>
+            <li>DFS replication for shares</li>
+            <li>PXE boot per-site gateways</li>
+          </ul>
+        </article>
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <img class="rounded-xl mb-4" alt="Cloud email" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"/>
+          <h3 class="text-xl font-bold">Office 365 Migrations (30 orgs)</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Hybrid migration playbooks, mailbox moves, DNS cutovers, and staff enablement.</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-gray-700 dark:text-gray-300">
+            <li>Assessment & wave planning</li>
+            <li>Hybrid Exchange where needed</li>
+            <li>3-day typical migration window</li>
+          </ul>
+        </article>
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6">
+          <img class="rounded-xl mb-4" alt="Server room" src="https://images.unsplash.com/photo-1516245834210-c4c142787335?q=80&w=1200&auto=format&fit=crop"/>
+          <h3 class="text-xl font-bold">macOS Server (Open Directory)</h3>
+          <p class="mt-2 text-gray-700 dark:text-gray-300">Central auth + file sharing for 1,000+ users in education environment.</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-gray-700 dark:text-gray-300">
+            <li>Open Directory</li>
+            <li>Permissioned file shares</li>
+            <li>App distribution</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENTAHO -->
+  <section id="pentaho" class="py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-amber-500 text-white font-bold">DE</span>
+        <h2 class="text-3xl font-extrabold">Pentaho Data Integration & Analytics</h2>
+      </div>
+      <p class="mt-2 text-gray-700 dark:text-gray-300">End-to-end demos: PDI (KTR/KJB), Kafka, Hive/Impala, Mondrian OLAP, CDE dashboards. Click to expand each project.</p>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <!-- 1 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Metadata Injection – Self Service Onboarding</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <p><strong>Objective:</strong> Dynamic onboarding for multi-customer CSV schemas via Metadata Injection.</p>
+            <p><strong>Outcome:</strong> Faster onboarding; minimal dev changes.</p>
+            <ul>
+              <li>Sample CSVs (Acme, HiTech, WillCo) + <code>file_type_fields.csv</code> registry.</li>
+              <li>PDI templates injected at runtime; <code>t_file2hdfs.ktr</code> to stage in HDFS.</li>
+              <li>Mondrian exports; PUC dashboards for validation.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 2 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">AEL Spark Demo</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <p><strong>Objective:</strong> Run PDI on Spark via Adaptive Execution Layer.</p>
+            <p><strong>Outcome:</strong> Demonstrated horizontal scaling vs local engine.</p>
+            <ul>
+              <li>Datasets: <code>zipcode.csv</code>, <code>zipcodestores.csv</code>, <code>products.csv</code>.</li>
+              <li>Transform compatibility tweaks; runtime benchmarks; QA dashboards.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 3 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Credit Card Fraud Analysis</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <p><strong>Objective:</strong> Prepare scalable pipelines for fraud feature engineering.</p>
+            <p><strong>Outcome:</strong> Repeatable HDFS prep; faster model iteration.</p>
+            <ul>
+              <li>Jobs for ingestion/cleansing; suspicious-pattern tagging.</li>
+              <li><code>Cleanup & Setup Directories on HDFS.kjb</code> for idempotent runs.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 4 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">SFDC Customer 360</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <p><strong>Objective:</strong> Build a 360° customer profile for segmentation.</p>
+            <ul>
+              <li>Load <code>customers.csv</code>; normalize demographic & registration data.</li>
+              <li>Mondrian cube for cohorts; segmentation dashboards.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 5 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Candy Demo (CPG Analytics)</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Transforms: <code>cpg_sales.ktr</code>, <code>cpg_sentiment.ktr</code>, <code>cpg_keywords.ktr</code>, <code>Create_Date_Dimension.ktr</code>.</li>
+              <li>Mondrian for SKU/channel/region; promo ROI dashboards.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 6 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">London Air Quality</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>API ingest via <code>t_get_air_quality_data_ms_mf_inline.ktr</code>; time dims with <code>t_create_month_day_tables.ktr</code>.</li>
+              <li>Job orchestration (<code>London Air Quality Job.kjb</code>); OLAP & dashboards.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 7 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">JSON Getting Started</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Transforms: <code>JSON_Data_Processing.ktr</code>, <code>JSON_to_CSV.ktr</code>, lab & DW enrichment flows.</li>
+              <li>Patterns for JSON → CSV → warehouse with QA dashboards.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 8 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">R Plugin Integration</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Datasets: <code>iris.csv</code>, <code>pendigits.csv</code>, <code>diamonds_test.csv</code>.</li>
+              <li>Invoke R models; persist predictions; visualize in PUC.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 9 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">WEKA Banking Demo</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Train/test split (<code>BankTrain.csv</code>/<code>BankTest.csv</code>); scoring transform <code>t_weka_banking_scoring.ktr</code>.</li>
+              <li>Risk dashboards for explainability.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 10 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Tesla Motors Data Mashup</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Load <code>financial_demo.zip</code>; schema <code>financial.equity_quotes_tweets_live.xml</code>.</li>
+              <li>Overlay sentiment vs price; anomaly callouts.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 11 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Manufacturing Insights – Conveyor Belts</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Kafka ingest; vibration/RPM preprocessing; predictive KPIs.</li>
+              <li>Mondrian cubes; dashboards with component drilldowns.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 12 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Financial Services Demo</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>CTools + demo packages; account/portfolio OLAP; KPI dashboards.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 13 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">IoT_Class_RPM (Maintenance Required?)</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Normalize RPM; predictive outcomes; Mondrian model + dashboards.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 14 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">CPG_Pentaho</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Sales/logistics integration; SKU/vendor cubes; promo performance.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 15 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Streamlined Data Refinery (Hive/Impala)</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Hive/HDFS ingestion (<code>SDR_GeoLocation_HDFS.ktr</code>), Impala jobs.</li>
+              <li>Postgres bulk loads; OLAP dimensions: Phone, Geo, Time.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 16 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">IoT Vibration Prediction</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>LogitBoost training (<code>t_logitBoost_trainModelFR.ktr</code>); ARFF exports; prediction pipeline jobs.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 17 -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">cde.zip (Bud1 Components)</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>CDE dashboards; reusable components; dev time reduced ~30%.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONVERSATIONAL AI -->
+  <section id="convai" class="py-16 bg-gray-50 dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-600 text-white font-bold">AI</span>
+        <h2 class="text-3xl font-extrabold">Conversational AI Bot Design</h2>
+      </div>
+      <p class="mt-2 text-gray-700 dark:text-gray-300">Multichannel assistants with intent design, secure API integrations, escalation paths, and analytics. Each bot below includes objective, impact, and key technical steps.</p>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <!-- Z Bank -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Z Bank Conversational Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <p><strong>Objective:</strong> Account opening, credit apps, and lead capture.</p>
+            <ul>
+              <li>Intent library (KYC, account types, eligibility).</li>
+              <li>Core-banking API integration; PII guardrails.</li>
+              <li>Escalation to agent + analytics for containment.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- ASCAP -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">ASCAP Support Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <p>Automated licensing Q&A; member support; reduced manual volume ~30%.</p>
+            <ul>
+              <li>FAQ ingestion; intent tuning for licensing verbs.</li>
+              <li>Membership flows; handoff when confidence low.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Fraud Banking -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Fraud & Banking Resolution Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Structured capture of disputed transactions.</li>
+              <li>Case creation & routing to fraud ops.</li>
+              <li>Step-by-step progress updates.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Pest Control -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Pest Control Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Pest type, urgency, location flows.</li>
+              <li>Calendar booking integration; dispatch alerts.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- HR Bot -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Internal HR Bot</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Benefits/PTO/payroll intents; employee context memory.</li>
+              <li>Escalation to HR for policy exceptions.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Smart Banking Assistant -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Smart Banking Assistant</summary>
+          <div class="mt-3 text-sm text-gray-700 dark:text-gray-300 prose">
+            <ul>
+              <li>Balances, transfers, statements; disambiguation.</li>
+              <li>Secure APIs; audit logs.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- 
