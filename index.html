@@ -87,19 +87,22 @@
         </div>
       </div>
       <!-- Media well: drop in an <img> OR a <video> below -->
-      <div class="relative">
-        <div class="aspect-video rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
-          <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/60 border border-slate-800 dark:border-slate-800 flex items-center justify-center text-center p-4">
-            <!-- Replace with your media: -->
-            <img src="/assets/images/fdlcheadshot.jpg" alt="Franklin De La Cruz" class="w-full h-full object-cover rounded-xl"/>
-            <!-- or: -->
-            <!-- <video controls poster="poster.jpg" class="w-full h-full rounded-xl"><source src="intro.mp4" type="video/mp4"/></video> -->
-          </div>
-        </div>
-        <div class="absolute -bottom-6 -right-6 rotate-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm"><p class="text-xs">Available for strategic presales engagements + Post Sales Implementations.</p></div>
-      </div>
+     <div class="relative">
+  <!-- Square, not 16:9 -->
+  <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-200 to-brand-500/40 dark:from-brand-400/20 dark:to-brand-800/30 p-2">
+    <div class="w-full h-full rounded-2xl bg-white/60 dark:bg-slate-900/900 border border-slate-800 dark:border-slate-800 flex items-center justify-center p-4 overflow-hidden">
+      <img
+        src="/assets/images/fdlcheadshot.jpg"
+        alt="Franklin De La Cruz"
+        class="max-w-[800px] w-full h-full object-contain rounded-xl"
+      />
     </div>
-  </section>
+  </div>
+
+  <div class="absolute -bottom-6 -right-6 rotate-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm">
+    <p class="text-xs">Available for strategic presales engagements + Post Sales Implementations.</p>
+  </div>
+</div>
 
   <!-- Awards (unchanged structure) -->
   <section id="awards" class="py-16 md:py-24 bg-gradient-to-b from-brand-50/60 to-transparent dark:from-slate-900/30 border-y border-slate-200 dark:border-slate-800">
@@ -349,6 +352,7 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 
