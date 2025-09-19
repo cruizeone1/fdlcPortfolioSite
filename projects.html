@@ -3,69 +3,72 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Franklin De La Cruz · Unified Project Portfolio</title>
+  <title>Franklin De La Cruz — Projects</title>
+  <meta name="description" content="Unified Project Portfolio — projects, builds, and demos curated from real deployments." />
+  <meta name="author" content="Franklin De La Cruz" />
+  <meta property="og:title" content="Franklin De La Cruz — Projects" />
+  <meta property="og:description" content="Projects from AI, CRM, Data, and Infrastructure work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
+    // Match the same brand palette and dark-mode behavior as index.html
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: {50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a'}
+            brand: {
+              50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',
+              500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a'
+            }
           }
         }
       }
     };
   </script>
+
+  <!-- Print style parity -->
   <style>
-    @media print {
-      .no-print { display: none !important; }
-      .card { box-shadow: none !important; border: 1px solid #e5e7eb; }
-      a { text-decoration: none; color: inherit; }
-    }
-    .prose ul { list-style: disc; padding-left: 1.25rem; }
-    .prose ol { list-style: decimal; padding-left: 1.25rem; }
+    @media print { .no-print { display:none!important; } .card{box-shadow:none!important;border:1px solid #e5e7eb} a{text-decoration:none;color:inherit} }
   </style>
+
+  <!-- Theme init (same logic as index.html) -->
   <script>
     const setTheme = (mode) => {
-      if (mode === 'dark') {
-        document.documentElement.classList.add('dark');
-        localStorage.theme = 'dark';
-      } else if (mode === 'light') {
-        document.documentElement.classList.remove('dark');
-        localStorage.theme = 'light';
-      } else {
-        localStorage.removeItem('theme');
-      }
+      if(mode==='dark'){document.documentElement.classList.add('dark');localStorage.theme='dark';}
+      else if(mode==='light'){document.documentElement.classList.remove('dark');localStorage.theme='light';}
+      else {localStorage.removeItem('theme');}
     };
-    (function() {
-      const t = localStorage.theme;
-      if (t === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    (function(){
+      const t=localStorage.theme;
+      if(t==='dark'||(!('theme' in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches)){
         document.documentElement.classList.add('dark');
       }
     })();
   </script>
 </head>
 <body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-  <!-- NAV -->
+  <!-- Header (mirrors index.html) -->
   <header class="sticky top-0 z-40 bg-white/70 dark:bg-slate-900/70 backdrop-blur border-b border-slate-200 dark:border-slate-800">
     <div class="max-w-6xl xl:max-w-7xl mx-auto px-4 py-3">
-      <div class="flex items-center justify-between">
-        <a href="/index.html" class="font-extrabold tracking-tight text-xl">Franklin De La Cruz</a>
-        <div class="flex items-center gap-4">
-          <nav class="flex items-center gap-4 md:gap-6 overflow-x-auto scrollbar-none whitespace-nowrap text-sm">
+      <div class="w-full">
+        <a href="/index.html" class="block font-semibold text-lg md:text-xl">Franklin De La Cruz</a>
+      </div>
+      <div class="mt-2 flex items-center justify-between gap-3">
+        <nav class="flex gap-4 md:gap-6 text-sm overflow-x-auto scrollbar-none">
             <a href="/index.html" class="hover:text-brand-700 whitespace-nowrap">Home</a>
-            <a href="#overview" class="hover:text-brand-700 whitespace-nowrap">Overview</a>
             <a href="#convai" class="hover:text-brand-700 whitespace-nowrap">Conversational AI</a>
             <a href="#ai" class="hover:text-brand-700 whitespace-nowrap">AI Content</a>
             <a href="#crm" class="hover:text-brand-700 whitespace-nowrap">CRM Development</a>
             <a href="#pentaho" class="hover:text-brand-700 whitespace-nowrap">ETL & Analytics</a>
             <a href="#infra" class="hover:text-brand-700 whitespace-nowrap">Network & Infra</a>
             <a href="#web" class="hover:text-brand-700 whitespace-nowrap">Web Design</a>
-          </nav>
-        </div>
+        </nav>
       </div>
     </div>
-  </header>
+  </header>>
 
   <!-- HERO -->
   <section id="top" class="relative overflow-hidden">
@@ -75,8 +78,11 @@
         <div>
           <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">Unified Project Portfolio</h1>
           <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">A forward-looking repository of infrastructure builds, data &amp; analytics, CRM engineering, conversational AI systems, and web content all drawn directly from deployments and consulting work I’ve personally delivered.</p>
-          <p><br><h2 class="text-3xl font-extrabold"><a class="text-inherit no-underline hover:underline" href="https://github.com/cruizeone1" target="_blank" rel="noopener noreferrer">-Click Here for Github Repo-</a></h2></p>
-          <div class="mt-6 flex flex-wrap gap-3"></div>
+            <br> <a href="https://github.com/cruizeone1" target="_blank" rel="noreferrer"
+             class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 text-white px-5 py-3 font-medium shadow hover:shadow-md hover:bg-brand-700 w-full sm:w-[240px]">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.1c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.74.08-.73.08-.73 1.22.08 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.77-1.63-2.67-.31-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.13-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 016 0c2.28-1.56 3.29-1.24 3.29-1.24.66 1.69.25 2.94.12 3.25.77.85 1.24 1.93 1.24 3.25 0 4.63-2.8 5.64-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.22.69.83.57A12 12 0 0012 .5z"/></svg>
+            View GitHub
+          </a>
         </div>
         <div class="relative">
           <img class="w-full rounded-2xl shadow-2xl" alt="Portfolio visual" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" />
@@ -133,7 +139,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-3">
         <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-600 text-white font-bold">AI</span>
-        <h2 class="text-3xl font-extrabold"><a class="text-inherit no-underline hover:underline" href="https://github.com/cruizeone1/LivePersonGenAIBots" target="_blank" rel="noopener noreferrer">Conversational AI Bot Design -Click Here for Github Repo-</a></h2><---
+        <h2 class="text-3xl font-extrabold"><a class="text-inherit no-underline hover:underline" href="https://github.com/cruizeone1/LivePersonGenAIBots" target="_blank" rel="noopener noreferrer">Conversational AI Bot Design</a></h2><a href="https://github.com/cruizeone1/LivePersonGenAIBots" target="_blank" rel="noreferrer"
+             class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 text-white px-2 py-1 font-medium shadow hover:shadow-md hover:bg-brand-700 w-full sm:w-[240px]">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.1c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.74.08-.73.08-.73 1.22.08 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.77-1.63-2.67-.31-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.13-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 016 0c2.28-1.56 3.29-1.24 3.29-1.24.66 1.69.25 2.94.12 3.25.77.85 1.24 1.93 1.24 3.25 0 4.63-2.8 5.64-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.22.69.83.57A12 12 0 0012 .5z"/></svg>
+            View GitHub
+          </a>
       </div>
       <p class="mt-2 text-slate-700 dark:text-slate-300">Multichannel assistants with intent design, secure API integrations, escalation paths, and analytics. Each bot below includes objective, impact, and key technical steps.</p>
       <div class="mt-8 grid lg:grid-cols-2 gap-6">
@@ -577,7 +587,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-3">
         <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-amber-500 text-white font-bold">DE</span>
-        <h2 class="text-3xl font-extrabold"><a class="text-inherit no-underline hover:underline" href="https://github.com/cruizeone1/PentahoProjects" target="_blank" rel="noopener noreferrer">Pentaho Data Integration &amp; Analytics -Click Here for Github Repo-</a></h2><---
+        <h2 class="text-3xl font-extrabold"><a class="text-inherit no-underline hover:underline" href="https://github.com/cruizeone1/PentahoProjects" target="_blank" rel="noopener noreferrer">Pentaho Data Integration &amp; Analytics</a></h2>
+      <a href="https://github.com/cruizeone1/PentahoProjects" target="_blank" rel="noreferrer"
+             class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 text-white px-2 py-1 font-medium shadow hover:shadow-md hover:bg-brand-700 w-full sm:w-[240px]">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.1c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.74.08-.73.08-.73 1.22.08 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.77-1.63-2.67-.31-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.13-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 016 0c2.28-1.56 3.29-1.24 3.29-1.24.66 1.69.25 2.94.12 3.25.77.85 1.24 1.93 1.24 3.25 0 4.63-2.8 5.64-5.48 5.95.43.38.81 1.12.81 2.26v3.35c0 .32.22.69.83.57A12 12 0 0012 .5z"/></svg>
+            View GitHub
+          </a>
       </div>
       <p class="mt-2 text-slate-700 dark:text-slate-300">End-to-end demos: PDI (KTR/KJB), Kafka, Hive/Impala, Mondrian OLAP, CDE dashboards. Click to expand each project.</p>
       <div class="mt-8 grid lg:grid-cols-2 gap-6">
@@ -771,7 +786,7 @@
         <!-- Portfolio Website -->
         <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
           <img class="rounded-xl mb-4" alt="Portfolio site" src="/assets/images/fdlcsite.png" />
-          <h3 class="text-xl font-bold">Portfolio Website (2025) · franklindelacruz.com</h3>
+          <h3 class="text-xl font-bold"><a class="text-inherit no-underline hover:underline" href="https://franklindelacruz.com" target="_blank" rel="noopener noreferrer">Portfolio Website (2025) · franklindelacruz.com</a></h3>
           <p class="mt-2 text-slate-700 dark:text-slate-300">HTML from scratch, styled with Tailwind; hosted on GitHub &amp; published via Cloudflare. Built to highlight career projects; completed in two days (Sept 2025).</p>
           <div class="mt-4">
             <div class="text-sm font-semibold text-slate-800 dark:text-slate-200">Step-by-step</div>
@@ -796,7 +811,7 @@
         <!-- DLC Consultancy -->
         <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
           <img class="rounded-xl mb-4" alt="Consultancy site" src="/assets/images/dlcsite.png" />
-          <h3 class="text-xl font-bold">DLC Consultancy (2024) · dlcconsultancy.com</h3>
+          <h3 class="text-xl font-bold"><a class="text-inherit no-underline hover:underline" href="https://dlcconsultancy.com" target="_blank" rel="noopener noreferrer">DLC Consultancy (2024) · dlcconsultancy.com</a></h3>
           <p class="mt-2 text-slate-700 dark:text-slate-300">WIX site with SEO, services pages, lead capture, and light blogging for thought leadership.</p>
           <div class="mt-4">
             <div class="text-sm font-semibold text-slate-800 dark:text-slate-200">Step-by-step</div>
