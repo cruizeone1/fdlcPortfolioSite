@@ -55,12 +55,12 @@
           <nav class="flex items-center gap-4 md:gap-6 overflow-x-auto scrollbar-none whitespace-nowrap text-sm">
             <a href="/index.html" class="hover:text-brand-700 whitespace-nowrap">Home</a>
             <a href="#overview" class="hover:text-brand-700 whitespace-nowrap">Overview</a>
-            <a href="#crm" class="hover:text-brand-700 whitespace-nowrap">CRM Development</a>
-            <a href="#infra" class="hover:text-brand-700 whitespace-nowrap">Network & Infra</a>
-            <a href="#pentaho" class="hover:text-brand-700 whitespace-nowrap">Pentaho</a>
             <a href="#convai" class="hover:text-brand-700 whitespace-nowrap">Conversational AI</a>
-            <a href="#ai" class="hover:text-brand-700 whitespace-nowrap">AI</a>
-            <a href="#web" class="hover:text-brand-700 whitespace-nowrap">Web & Content</a>
+            <a href="#ai" class="hover:text-brand-700 whitespace-nowrap">AI Content</a>
+            <a href="#crm" class="hover:text-brand-700 whitespace-nowrap">CRM Development</a>
+            <a href="#pentaho" class="hover:text-brand-700 whitespace-nowrap">ETL & Analytics</a>
+            <a href="#infra" class="hover:text-brand-700 whitespace-nowrap">Network & Infra</a>
+            <a href="#web" class="hover:text-brand-700 whitespace-nowrap">Web Design</a>
           </nav>
         </div>
       </div>
@@ -124,6 +124,154 @@
           <div class="text-sm uppercase tracking-wide text-slate-500 dark:text-slate-400">Callout</div>
           <p class="mt-2 text-slate-700 dark:text-slate-300">All CRM admin capabilities are derived from real customer issues resolved for Salesforce consultancy clients. Requests are grouped by the <span class="font-semibold">functional capability</span> needed to deliver the solution. </p><p> </p> <p>All SAAS platforms listed and projects developed were mostly part of larger deployments and customer facing sales demonstrations and activities.</p>
         </aside>
+      </div>
+    </div>
+  </section>
+
+<!-- CONVERSATIONAL AI -->
+  <section id="convai" class="py-16 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-600 text-white font-bold">AI</span>
+        <h2 class="text-3xl font-extrabold"><a class="text-inherit no-underline hover:underline" href="https://github.com/cruizeone1/LivePersonGenAIBots" target="_blank" rel="noopener noreferrer">Conversational AI Bot Design -Click Here for Github Repo-</a></h2><---
+      </div>
+      <p class="mt-2 text-slate-700 dark:text-slate-300">Multichannel assistants with intent design, secure API integrations, escalation paths, and analytics. Each bot below includes objective, impact, and key technical steps.</p>
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <!-- Z Bank -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Z Bank Conversational Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <p><strong>Objective:</strong> Account opening, credit applications, and lead capture while meeting KYC requirements.</p>
+            <ul>
+              <li>Intent library (KYC, account types, eligibility).</li>
+              <li>Core-banking API integration; PII guardrails and audit trails.</li>
+              <li>Escalation to agent + analytics for containment &amp; deflection.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- ASCAP -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">ASCAP Support Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <p>Automated licensing Q&amp;A; member support; reduced manual volume ~30%.</p>
+            <ul>
+              <li>FAQ ingestion; intent tuning for licensing verbs.</li>
+              <li>Membership flows; human handoff when confidence is low.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Fraud & Banking -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Fraud &amp; Banking Resolution Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Structured capture of disputed transactions with verification steps.</li>
+              <li>Case creation &amp; routing to fraud ops with SLA timers.</li>
+              <li>Step-by-step progress updates and status subscription.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Pest Control -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Pest Control Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Pest type, urgency, and location flows.</li>
+              <li>Calendar booking integration; technician dispatch alerts.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Internal HR Bot -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Internal HR Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Benefits/PTO/payroll intents; employee context memory.</li>
+              <li>Escalation to HR for policy exceptions.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Smart Banking Assistant -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Smart Banking Assistant</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Balances, transfers, statements; disambiguation and verification.</li>
+              <li>Secure APIs; audit logs; rate-limiting and abuse prevention.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Utilities Energy Assistance Bot -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Utilities Energy Assistance Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Eligibility intake; validation vs program rules and income thresholds.</li>
+              <li>Case generation + CRM sync; empathetic tone &amp; accessibility.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Hard Drive Recommendation Bot -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Hard Drive Recommendation Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Sequential questioning (capacity, speed, budget, interface).</li>
+              <li>Decision-tree mapping to catalog SKUs; upsell/cross-sell logic.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Thermos Retail Assistant -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Thermos Retail Assistant</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Parts/specs/warranty inquiries; document retrieval from CMS.</li>
+              <li>Routed claims when documentation uploaded; status tracking.</li>
+            </ul>
+          </div>
+        </details>
+        <!-- Retail Stylist Bot -->
+        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
+          <summary class="font-semibold cursor-pointer">Retail Stylist Bot</summary>
+          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
+            <ul>
+              <li>Preference intake; real-time styling metadata and recommendations.</li>
+              <li>Outfit assembly with accessory upsells; cart handoff.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI PROJECTS -->
+  <section id="ai" class="py-16 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600 text-white font-bold">AI</span>
+        <h2 class="text-3xl font-extrabold">AI Generated Content & Media</h2>
+      </div>
+      <p class="mt-2 text-slate-700 dark:text-slate-300">Generative AI applications in enablement and storytelling, blending text, voice, video, and avatars to create compelling narratives and training materials.</p>
+      <div class="mt-6 grid lg:grid-cols-2 gap-6">
+        <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Descript AI Content Generation (2025)</h3>
+          <p class="mt-2 text-slate-700 dark:text-slate-300">Leveraged Descript’s text-to-voice and avatar features to produce enablement content for LivePerson. Transcript-based editing workflow streamlined production for both technical and non-technical audiences (~60% faster).</p>
+          <ul class="mt-3 text-sm text-slate-700 dark:text-slate-300 list-disc pl-5">
+            <li>Generative voice cloning and video avatars</li>
+            <li>Transcript-based editing for rapid iteration</li>
+            <li>LMS distribution with analytics</li>
+          </ul>
+        </article>
+        <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">LTX Studio Pitch Deck Video (2025)</h3>
+          <p class="mt-2 text-slate-700 dark:text-slate-300">Created a generative video from still images for LivePerson’s Pitch Deck Contest. Won first place by demonstrating cutting-edge AI storytelling capabilities.</p>
+          <ul class="mt-3 text-sm text-slate-700 dark:text-slate-300 list-disc pl-5">
+            <li>Image-to-video generation workflows</li>
+            <li>Custom script and storyboarding</li>
+            <li>Award-winning output used in executive presentations</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
@@ -610,153 +758,6 @@
     </div>
   </section>
 
-  <!-- CONVERSATIONAL AI -->
-  <section id="convai" class="py-16 border-t border-slate-200 dark:border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-600 text-white font-bold">AI</span>
-        <h2 class="text-3xl font-extrabold"><a class="text-inherit no-underline hover:underline" href="https://github.com/cruizeone1/LivePersonGenAIBots" target="_blank" rel="noopener noreferrer">Conversational AI Bot Design -Click Here for Github Repo-</a></h2><---
-      </div>
-      <p class="mt-2 text-slate-700 dark:text-slate-300">Multichannel assistants with intent design, secure API integrations, escalation paths, and analytics. Each bot below includes objective, impact, and key technical steps.</p>
-      <div class="mt-8 grid lg:grid-cols-2 gap-6">
-        <!-- Z Bank -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Z Bank Conversational Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <p><strong>Objective:</strong> Account opening, credit applications, and lead capture while meeting KYC requirements.</p>
-            <ul>
-              <li>Intent library (KYC, account types, eligibility).</li>
-              <li>Core-banking API integration; PII guardrails and audit trails.</li>
-              <li>Escalation to agent + analytics for containment &amp; deflection.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- ASCAP -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">ASCAP Support Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <p>Automated licensing Q&amp;A; member support; reduced manual volume ~30%.</p>
-            <ul>
-              <li>FAQ ingestion; intent tuning for licensing verbs.</li>
-              <li>Membership flows; human handoff when confidence is low.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Fraud & Banking -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Fraud &amp; Banking Resolution Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Structured capture of disputed transactions with verification steps.</li>
-              <li>Case creation &amp; routing to fraud ops with SLA timers.</li>
-              <li>Step-by-step progress updates and status subscription.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Pest Control -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Pest Control Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Pest type, urgency, and location flows.</li>
-              <li>Calendar booking integration; technician dispatch alerts.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Internal HR Bot -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Internal HR Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Benefits/PTO/payroll intents; employee context memory.</li>
-              <li>Escalation to HR for policy exceptions.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Smart Banking Assistant -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Smart Banking Assistant</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Balances, transfers, statements; disambiguation and verification.</li>
-              <li>Secure APIs; audit logs; rate-limiting and abuse prevention.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Utilities Energy Assistance Bot -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Utilities Energy Assistance Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Eligibility intake; validation vs program rules and income thresholds.</li>
-              <li>Case generation + CRM sync; empathetic tone &amp; accessibility.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Hard Drive Recommendation Bot -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Hard Drive Recommendation Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Sequential questioning (capacity, speed, budget, interface).</li>
-              <li>Decision-tree mapping to catalog SKUs; upsell/cross-sell logic.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Thermos Retail Assistant -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Thermos Retail Assistant</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Parts/specs/warranty inquiries; document retrieval from CMS.</li>
-              <li>Routed claims when documentation uploaded; status tracking.</li>
-            </ul>
-          </div>
-        </details>
-        <!-- Retail Stylist Bot -->
-        <details class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5">
-          <summary class="font-semibold cursor-pointer">Retail Stylist Bot</summary>
-          <div class="mt-3 text-sm text-slate-700 dark:text-slate-300 prose">
-            <ul>
-              <li>Preference intake; real-time styling metadata and recommendations.</li>
-              <li>Outfit assembly with accessory upsells; cart handoff.</li>
-            </ul>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI PROJECTS -->
-  <section id="ai" class="py-16 border-t border-slate-200 dark:border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600 text-white font-bold">AI</span>
-        <h2 class="text-3xl font-extrabold">AI Projects</h2>
-      </div>
-      <p class="mt-2 text-slate-700 dark:text-slate-300">Generative AI applications in enablement and storytelling, blending text, voice, video, and avatars to create compelling narratives and training materials.</p>
-      <div class="mt-6 grid lg:grid-cols-2 gap-6">
-        <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
-          <h3 class="text-xl font-bold">Descript AI Content Generation (2025)</h3>
-          <p class="mt-2 text-slate-700 dark:text-slate-300">Leveraged Descript’s text-to-voice and avatar features to produce enablement content for LivePerson. Transcript-based editing workflow streamlined production for both technical and non-technical audiences (~60% faster).</p>
-          <ul class="mt-3 text-sm text-slate-700 dark:text-slate-300 list-disc pl-5">
-            <li>Generative voice cloning and video avatars</li>
-            <li>Transcript-based editing for rapid iteration</li>
-            <li>LMS distribution with analytics</li>
-          </ul>
-        </article>
-        <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
-          <h3 class="text-xl font-bold">LTX Studio Pitch Deck Video (2025)</h3>
-          <p class="mt-2 text-slate-700 dark:text-slate-300">Created a generative video from still images for LivePerson’s Pitch Deck Contest. Won first place by demonstrating cutting-edge AI storytelling capabilities.</p>
-          <ul class="mt-3 text-sm text-slate-700 dark:text-slate-300 list-disc pl-5">
-            <li>Image-to-video generation workflows</li>
-            <li>Custom script and storyboarding</li>
-            <li>Award-winning output used in executive presentations</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
 
   <!-- WEB & CONTENT SECTION -->
   <section id="web" class="py-16 border-t border-slate-200 dark:border-slate-800">
@@ -833,34 +834,6 @@
               <li>Backups &amp; DR: automated snapshots, retention policy, restore runbooks.</li>
             </ul>
           </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- MEDIA -->
-  <section id="media" class="py-16 border-t border-slate-200 dark:border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-rose-600 text-white font-bold">🎥</span>
-        <h2 class="text-3xl font-extrabold">AI-Generated Content &amp; Media</h2>
-      </div>
-      <div class="mt-8 grid md:grid-cols-2 gap-6">
-        <article class="bg-gradient-to-br from-rose-50 to-white dark:from-rose-900/20 dark:to-slate-950 border border-rose-100 dark:border-rose-900 rounded-2xl p-6">
-          <h3 class="text-xl font-bold">Descript AI Enablement (2025)</h3>
-          <p class="mt-2 text-slate-700 dark:text-slate-300">Text-to-voice with Overdub + digital avatars; transcript-based editing. ~60% faster than traditional workflows.</p>
-          <ul class="mt-3 text-sm list-disc pl-5 text-slate-700 dark:text-slate-300">
-            <li>Script → voice → avatar → branded export</li>
-            <li>LMS distribution with analytics</li>
-          </ul>
-        </article>
-        <article class="bg-gradient-to-br from-purple-50 to-white dark:from-purple-900/20 dark:to-slate-950 border border-purple-100 dark:border-purple-900 rounded-2xl p-6">
-          <h3 class="text-xl font-bold">LTX Studio Pitch Video (2025)</h3>
-          <p class="mt-2 text-slate-700 dark:text-slate-300">Generative motion from stills; first place in LivePerson Pitch Deck Contest.</p>
-          <ul class="mt-3 text-sm list-disc pl-5 text-slate-700 dark:text-slate-300">
-            <li>Storyboard → asset prep → motion design</li>
-            <li>VO sync, pacing, and final polish</li>
-          </ul>
         </article>
       </div>
     </div>
